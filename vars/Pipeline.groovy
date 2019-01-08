@@ -52,7 +52,7 @@ def call() {
     pipeline {
         agent {
             node {
-                label ""
+                label "harshan-test"
                 customWorkspace "${props.WORKSPACE}"
             }
         }
