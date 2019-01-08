@@ -56,7 +56,7 @@ def runTesPlans(def product, def testPlanFilePath, def workspace, def url) {
         cd ${props.TESTGRID_DIST_LOCATION}/${props.TESTGRID_NAME}
         export TESTGRID_HOME="${props.TESTGRID_HOME}"
         ./testgrid run-testplan --product ${product} \
-            --file ${testPlanFilePath} --workspace ${workspace} --url ${url}      
+            --file ${testPlanFilePath} --workspace ${workspace} --url ${url}  --debug 5005      
     """
 }
 
